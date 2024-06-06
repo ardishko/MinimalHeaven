@@ -1,26 +1,9 @@
 {
   imports = [
     ./anyrun.nix
-    ./browser
-    ./discord-canary.nix
-    ./flameshot.nix
-    ./goverlay.nix
-    ./heroic.nix
     ./hyprland-conf.nix
-    ./hyprlock.nix
     ./kitty.nix
-    ./lutris.nix
-    ./mpv.nix
-    ./obs
-    ./obsidian.nix
-    ./prism-launcher.nix
-    ./qt
-    ./spicetify.nix
-    ./swaync.nix
-    ./vesktop.nix
-    ./virt-manager.nix
     ./waybar.nix
     ./wlogout.nix
-    ./fastfetch
   ];
 }

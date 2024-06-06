@@ -1,7 +1,0 @@
-{
-  services = {
-    swayosd = {
-      enable = true;
-    };
-  };
-}
