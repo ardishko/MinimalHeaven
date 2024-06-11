@@ -6,7 +6,7 @@
 /*     kernelParams = [ ]; */
     extraModulePackages = [];
     kernelPackages = pkgs.linuxPackages_xanmod;
-    supportedFilesystems = [ "ntfs" ];
+    supportedFilesystems = [ "ntfs" "zfs" ];
     kernelModules = [ "udev" "xpadneo" ];
   };
 }
