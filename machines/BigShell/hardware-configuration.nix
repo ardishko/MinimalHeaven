@@ -12,23 +12,23 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" =
-    { /* device = "/dev/disk/by-uuid/93d6988a-cb1d-40ae-b4d3-7deb6a6254a9"; */
-      device = "tmpfs";
-      options = [
-        "relatime"
-        "mode=755"
-        "size=6G"
-      ];
-      fsType = "tmpfs";
-      neededForBoot = true;
-    };
+  # fileSystems."/" =
+  #   { /* device = "/dev/disk/by-uuid/93d6988a-cb1d-40ae-b4d3-7deb6a6254a9"; */
+  #     device = "tmpfs";
+  #     options = [
+  #       "relatime"
+  #       "mode=755"
+  #       "size=6G"
+  #     ];
+  #     fsType = "tmpfs";
+  #     neededForBoot = true;
+  #   };
   #
   # fileSystems."/boot" =
   #   { device = "/dev/disk/by-uuid/C0B0-3C8B";
   #     fsType = "vfat";
   #   };
-  fileSystems."/persist".neededForBoot = true;
+  # fileSystems."/persist".neededForBoot = true;
 
   swapDevices = [ ];
 
