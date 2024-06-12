@@ -10,7 +10,6 @@
       directories = [
         "/var/log"
         "/var/lib/bluetooth"
-        "/var/lib/nixos"
         "/var/lib/systemd/coredump"
         "/etc/NetworkManager/system-connections"
         # persist /mnt so that all the mounted drives don't get wiped upon reboot
