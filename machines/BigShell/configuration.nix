@@ -34,12 +34,13 @@
   services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.liquid = {
+  users.users.${username} = {
     isNormalUser = true;
-    description = "liquid";
+    description = "${username}";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     ];
+    initialPassword = "nutsitch";
     shell = pkgs.nushell;
   };
 
