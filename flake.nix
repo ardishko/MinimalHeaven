@@ -53,9 +53,11 @@
       modules = [
         ./machines/ShadowMoses
         ./modules
+        ./secrets
         home-manager.nixosModules.home-manager
         # (import ./disko.nix {
         #    device = "/dev/nvme0n1";
+            # hostname = "ShadowMoses";
         #  })
         # disko.nixosModules.disko
       ];
@@ -66,10 +68,12 @@
       modules = [
         ./machines/Tanker
         ./modules
+        ./secrets
         home-manager.nixosModules.home-manager
         disko.nixosModules.disko
         (import ./disko.nix {
-           device = "/dev/nvme0n1";
+          device = "/dev/nvme0n1";
+          hostname = "Tanker"
          })
         ./modules/core/other/impermanence.nix
       ];
@@ -80,10 +84,12 @@
       modules = [
         ./machines/BigShell
         ./modules
+        ./secrets
         home-manager.nixosModules.home-manager
         disko.nixosModules.disko
         (import ./disko.nix {
-           device = "/dev/nvme0n1";
+          device = "/dev/nvme0n1";
+          hostname = "BigShell";
          })
         ./modules/core/other/impermanence.nix
       ];
