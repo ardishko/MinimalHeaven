@@ -73,7 +73,7 @@
         disko.nixosModules.disko
         (import ./disko.nix {
           device = "/dev/nvme0n1";
-          hostname = "Tanker"
+          hostname = "Tanker";
          })
         ./modules/core/other/impermanence.nix
       ];
