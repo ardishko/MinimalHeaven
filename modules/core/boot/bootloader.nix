@@ -2,17 +2,11 @@
 {
   boot = {
     loader = {
-      # grub = {
-      #   enable = true;
-      #   efiSupport = true;
-      #   useOSProber = true;
-      #   devices = [ "nodev" ];
-      # };
-      # grub = {
-      #   enable = true;
-      #   devices = [ "nodev" ];
-      #   efiSupport = true;
-      #   useOSProber = true;
+      grub = {
+        enable = true;
+        devices = [ "nodev" ];
+        efiSupport = true;
+        useOSProber = true;
         # theme = {
         #   pkgs.fetchFromGitHub = {
         #     owner = "catppuccin";
@@ -22,8 +16,8 @@
         #   }
         #   + "/src/catppuccin-frappe-grub-theme";
         # };
-      # };
-        systemd-boot.enable = true;
+      };
+        systemd-boot.enable = false;
         efi = {
           canTouchEfiVariables = true;
         };
