@@ -53,7 +53,6 @@
       modules = [
         ./machines/ShadowMoses
         ./modules
-        ./secrets
         home-manager.nixosModules.home-manager
         # (import ./disko.nix {
         #    device = "/dev/nvme0n1";
@@ -68,7 +67,6 @@
       modules = [
         ./machines/Tanker
         ./modules
-        ./secrets
         home-manager.nixosModules.home-manager
         disko.nixosModules.disko
         (import ./disko.nix {
@@ -84,7 +82,6 @@
       modules = [
         ./machines/BigShell
         ./modules
-        ./secrets
         home-manager.nixosModules.home-manager
         disko.nixosModules.disko
         (import ./disko.nix {
