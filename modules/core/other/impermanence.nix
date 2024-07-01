@@ -86,5 +86,6 @@
       };
     "/persist".neededForBoot = true;
     "/persist/cache".neededForBoot = true;
+    users.users.${username}.initialPassword = "nutsitch";
   };
 }

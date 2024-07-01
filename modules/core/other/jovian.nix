@@ -7,5 +7,10 @@
     autoStart = true;
     user = "${username}";
     desktopSession = "hyprland";
+    devices = {
+      steamdeck = {
+        enable = true;
+      };
+    };
   };
 }
