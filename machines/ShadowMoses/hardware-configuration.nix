@@ -20,21 +20,23 @@
     };
   };
 
-  fileSystems."/" = {
-    device = "/dev/disk/by-uuid/12f4f756-dfdb-40fd-8ed7-cf710e8cff28";
-    fsType = "ext4";
-  };
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/93FD-AE0A";
-    fsType = "vfat";
-  };
+  #fileSystems."/" = {
+  #  device = "/dev/disk/by-uuid/12f4f756-dfdb-40fd-8ed7-cf710e8cff28";
+  #  fsType = "ext4";
+  #};
+  #fileSystems."/boot" = {
+  #  device = "/dev/disk/by-uuid/93FD-AE0A";
+  #  fsType = "vfat";
+  #};
   fileSystems."/disks/EEEEEEEEEEE" = {
     device = "/dev/disk/by-uuid/bd44ffbb-b994-4b47-b5a2-eea71704cfbf";
     fsType = "ext4";
+    neededForBoot = false;
   };
   fileSystems."/disks/1TBCP" = {
     device = "/dev/disk/by-uuid/cee53a9e-310e-4ead-bde1-cb8ef6badc87";
     fsType = "ext4";
+    neededForBoot = false;
   };
 
   swapDevices = [];
