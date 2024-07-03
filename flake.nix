@@ -53,7 +53,6 @@
       modules = [
         ./machines/ShadowMoses
         ./modules
-        ./secrets
         home-manager.nixosModules.home-manager
         disko.nixosModules.disko
         (import ./disko.nix {
