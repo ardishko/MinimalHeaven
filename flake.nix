@@ -57,7 +57,7 @@
         home-manager.nixosModules.home-manager
         disko.nixosModules.disko
         (import ./disko.nix {
-          device = "/dev/nvme0n1";
+          device = "/dev/nvme1n1";
           hostname = "ShadowMoses";
         })
       ];
