@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   # Define your hostname.
   networking.hostName = "Kamurocho";
