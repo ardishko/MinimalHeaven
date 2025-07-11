@@ -125,7 +125,7 @@
         modules = [
           ./machines/Kamurocho
           ./modules
-          ./secrets
+          home-manager.nixosModules.home-manager
           disko.nixosModules.disko
           (import ./disko.nix {
             device = "/dev/nvme2n1";
