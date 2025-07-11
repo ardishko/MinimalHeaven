@@ -112,7 +112,7 @@
           })
         ];
       };
-      Kamurocho = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.Kamurocho = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs =
           let
