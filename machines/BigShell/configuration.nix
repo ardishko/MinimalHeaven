@@ -2,13 +2,12 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, 
-  pkgs, 
-  inputs,
-  outputs,
+{
+  pkgs,
   username,
   ...
-}: {
+}:
+{
   # Define your hostname.
   networking.hostName = "BigShell";
   networking.hostId = "5d8fad81"; # required for zfs
@@ -38,9 +37,12 @@
   users.users.${username} = {
     isNormalUser = true;
     description = "${username}";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
+    extraGroups = [
+      "networkmanager"
+      "wheel"
     ];
+    # packages = with pkgs; [
+    # ];
     initialPassword = "nutsitch";
     shell = pkgs.nushell;
   };
