@@ -26,14 +26,14 @@
     };
   };
 
-  hardware = {
-    nvidia = {
-      enabled = true;
-      videoAcceleration = true;
-      modesetting.enable = true;
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
-    };
-  };
+  # hardware = {
+  #   nvidia = {
+  #     enable = true;
+  #     videoAcceleration = true;
+  #     modesetting.enable = true;
+  #     package = config.boot.kernelPackages.nvidiaPackages.stable;
+  #   };
+  # };
 
   #fileSystems."/" = {
   #  device = "/dev/disk/by-uuid/12f4f756-dfdb-40fd-8ed7-cf710e8cff28";
