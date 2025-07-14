@@ -20,7 +20,6 @@
       flavor = "frappe";
       font = "Iosevka Nerd Font";
       fontSize = "15";
-      loginBackground = true;
     })
   ];
 }
